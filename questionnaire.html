@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire Psychologique</title>
+    <style>
+        /* Style de la page pour centrer le contenu */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* Fond clair pour la page */
+            margin: 0;
+            padding: 0;
+            height: 160vh; /* Occupe toute la hauteur de la fenêtre */
+            display: flex;
+            justify-content: center; /* Centre le formulaire horizontalement */
+            align-items: center; /* Centre le formulaire verticalement */
+        }
+
+        /* Wrapper pour le formulaire et les phrases */
+        .form-container {
+            background-color: #fff;
+            padding: 100px;
+            border: 1px solid black; /* Cadre noir autour du formulaire */
+            border-radius: 10px; /* Coins arrondis */
+            width: 500px; /* Largeur du formulaire */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère autour du formulaire */
+            text-align: center; /* Centrer le texte à l'intérieur */
+        }
+
+        /* Style des étiquettes */
+        label {
+            font-size: 16px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        /* Style des boutons radio */
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        /* Style du bouton de soumission */
+        button {
+            background-color: #FF66A1;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        /* Style du bouton de soumission au survol */
+        button:hover {
+            background-color: #FF66A1;
+        }
+
+        /* Style du titre */
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        /* Style pour le texte descriptif */
+        p {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        .body{
+            background-color: #EBEAFF;
+        }
+    </style>
+</head>
+<body class="body">
+
+    <!-- Conteneur pour le formulaire et les phrases -->
+    <div class="form-container">
+        <h2>Questionnaire Psychologique de Bien-être et État Émotionnel</h2>
+        <p>Veuillez répondre aux questions suivantes. Cochez la case qui correspond le mieux à votre expérience des deux dernières semaines.</p>
+
+        <form action="votre-action.php" method="POST">
+            <!-- Question 1 -->
+            <label for="humeur">1. Avez-vous souvent eu des sentiments de tristesse ou de dépression ces derniers temps ?</label><br>
+            <input type="radio" id="humeur1" name="humeur" value="Jamais" required> Jamais
+            <input type="radio" id="humeur2" name="humeur" value="Parfois"> Parfois
+            <input type="radio" id="humeur3" name="humeur" value="Souvent"> Souvent
+            <input type="radio" id="humeur4" name="humeur" value="Très souvent"> Très souvent
+            <br><br>
+
+            <!-- Question 2 -->
+            <label for="energie">2. Vous sentez-vous fatigué(e) ou épuisé(e) même après une nuit de sommeil ?</label><br>
+            <input type="radio" id="energie1" name="energie" value="Jamais" required> Jamais
+            <input type="radio" id="energie2" name="energie" value="Parfois"> Parfois
+            <input type="radio" id="energie3" name="energie" value="Souvent"> Souvent
+            <input type="radio" id="energie4" name="energie" value="Très souvent"> Très souvent
+            <br><br>
+
+            <!-- Question 3 -->
+            <label for="concentration">3. Avez-vous du mal à vous concentrer ou à prendre des décisions ?</label><br>
+            <input type="radio" id="concentration1" name="concentration" value="Jamais" required> Jamais
+            <input type="radio" id="concentration2" name="concentration" value="Parfois"> Parfois
+            <input type="radio" id="concentration3" name="concentration" value="Souvent"> Souvent
+            <input type="radio" id="concentration4" name="concentration" value="Très souvent"> Très souvent
+            <br><br>
+
+            <!-- Question 4 -->
+            <label for="appetit">4. Votre appétit a-t-il changé ces derniers temps ?</label><br>
+            <input type="radio" id="appetit1" name="appetit" value="Non" required> Non
+            <input type="radio" id="appetit2" name="appetit" value="Moins faim"> Moins faim
+            <input type="radio" id="appetit3" name="appetit" value="Plus faim"> Plus faim
+            <input type="radio" id="appetit4" name="appetit" value="Beaucoup moins faim"> Beaucoup moins faim
+            <br><br>
+
+            <!-- Question 5 -->
+            <label for="sommeil">5. Comment évalueriez-vous la qualité de votre sommeil ?</label><br>
+            <input type="radio" id="sommeil1" name="sommeil" value="Très bonne" required> Très bonne
+            <input type="radio" id="sommeil2" name="sommeil" value="Bonne"> Bonne
+            <input type="radio" id="sommeil3" name="sommeil" value="Moyenne"> Moyenne
+            <input type="radio" id="sommeil4" name="sommeil" value="Mauvaise"> Mauvaise
+            <br><br>
+
+            <!-- Question 6 -->
+            <label for="anxiete">6. Ressentez-vous fréquemment de l'anxiété ou de l'inquiétude ?</label><br>
+            <input type="radio" id="anxiete1" name="anxiete" value="Jamais" required> Jamais
+            <input type="radio" id="anxiete2" name="anxiete" value="Parfois"> Parfois
+            <input type="radio" id="anxiete3" name="anxiete" value="Souvent"> Souvent
+            <input type="radio" id="anxiete4" name="anxiete" value="Très souvent"> Très souvent
+            <br><br>
+
+            <!-- Question 7 -->
+            <label for="negatif">7. Avez-vous souvent des pensées négatives ou des sentiments d'inutilité ?</label><br>
+            <input type="radio" id="negatif1" name="negatif" value="Jamais" required> Jamais
+            <input type="radio" id="negatif2" name="negatif" value="Parfois"> Parfois
+            <input type="radio" id="negatif3" name="negatif" value="Souvent"> Souvent
+            <input type="radio" id="negatif4" name="negatif" value="Très souvent"> Très souvent
+            <br><br>
+
+            <!-- Question 8 -->
+            <label for="relation">8. Avez-vous des difficultés à entretenir des relations sociales ou familiales ?</label><br>
+            <input type="radio" id="relation1" name="relation" value="Non" required> Non
+            <input type="radio" id="relation2" name="relation" value="Parfois"> Parfois
+            <input type="radio" id="relation3" name="relation" value="Souvent"> Souvent
+            <input type="radio" id="relation4" name="relation" value="Très souvent"> Très souvent
+            <br><br>
+
+            <!-- Question 9 -->
+            <label for="suicidaire">9. Avez-vous pensé à vous faire du mal ou à mettre fin à vos jours ?</label><br>
+            <input type="radio" id="suicidaire1" name="suicidaire" value="Jamais" required> Jamais
+            <input type="radio" id="suicidaire2" name="suicidaire" value="Parfois"> Parfois
+            <input type="radio" id="suicidaire3" name="suicidaire" value="Souvent"> Souvent
+            <input type="radio" id="suicidaire4" name="suicidaire" value="Très souvent"> Très souvent
+            <br><br>
+
+            <!-- Question 10 -->
+            <label for="plaisir">10. Avez-vous retrouvé du plaisir dans vos activités quotidiennes ?</label><br>
+            <input type="radio" id="plaisir1" name="plaisir" value="Oui, tout le temps" required> Oui, tout le temps
+            <input type="radio" id="plaisir2" name="plaisir" value="Oui, parfois"> Oui, parfois
+            <input type="radio" id="plaisir3" name="plaisir" value="Non"> Non
+            <br><br>
+
+            <button type="submit">Soumettre</button>
+        </form>
+    </div>
+
+</body>
+</html>

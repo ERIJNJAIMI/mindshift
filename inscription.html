@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <style>
+        /* Style pour centrer le formulaire et lui ajouter un cadre noir */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .form-container {
+            background-color: white;
+            border: 1px solid black;  /* Cadre noir autour du formulaire */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"], input[type="tel"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;  /* Conserver la largeur du bouton égale aux champs */
+            padding: 10px;
+            background-color: #FF77B7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;  /* Espace entre les champs et le bouton */
+        }
+
+        button:hover {
+            background-color: #FF77B7;
+        }
+        .body{
+            background-color: #EBEAFF;
+        }
+    </style>
+</head>
+<body class="body">
+
+    <div class="form-container">
+        <h2>Formulaire d'inscription</h2>
+
+        <form action="inscription.php" method="POST">
+            <label for="nom_complet">Nom complet :</label>
+            <input type="text" id="nom_complet" name="nom_complet" required><br>
+
+            <label for="email">Adresse e-mail :</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="mot_de_passe">Mot de passe :</label>
+            <input type="password" id="mot_de_passe" name="mot_de_passe" required><br>
+
+            <label for="telephone">Numéro de téléphone :</label>
+            <input type="tel" id="telephone" name="telephone" required><br>
+
+            <button type="submit">S'inscrire</button>
+        </form>
+    </div>
+
+</body>
+</html>

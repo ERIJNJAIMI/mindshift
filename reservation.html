@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de réservation chez un psychologue</title>
+        <!-- Additional CSS Files -->
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    
+        <link rel="stylesheet" href="assets/css/templatemo-softy-pinko.css">
+    
+    <style>
+        /* Style pour centrer le formulaire et lui ajouter un cadre noir */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .form-container {
+            background-color: white;
+            border: 2px solid black;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #FF77B7;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #FF66A1;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .body{
+            background-color: #EBEAFF;
+        }
+
+    </style>
+</head>
+<body class="body">
+    
+
+
+    <div class="form-container">
+        <h2>Réservation chez un psychologue</h2>
+
+        <form action="reservation.php" method="POST">
+           
+
+            <!-- Champ pour le type de consultation (anonyme ou non) -->
+            <div class="form-group">
+                <label for="type_consultation">Type de consultation :</label>
+                <select id="type_consultation" name="type_consultation" required>
+                    <option value="anonyme">Anonyme</option>
+                    <option value="non_anonyme">Non Anonyme</option>
+                </select>
+            </div>
+
+            <!-- Champ pour le mode de communication (message ou appel) -->
+            <div class="form-group">
+                <label for="mode_communication">Mode de communication :</label>
+                <select id="mode_communication" name="mode_communication" required>
+                    <option value="message">Message</option>
+                    <option value="appel">Appel</option>
+                </select>
+            </div>
+
+            <!-- Champ pour le sexe du psychologue -->
+            <div class="form-group">
+                <label for="sexe_psychologue">Sexe du psychologue :</label>
+                <select id="sexe_psychologue" name="sexe_psychologue" required>
+                    <option value="homme">Homme</option>
+                    <option value="femme">Femme</option>
+                    <option value="indifferent">Peu importe</option>
+                </select>
+            </div>
+
+            <!-- Champ pour la date et heure -->
+            <div class="form-group">
+                <label for="date_heure">Date et Heure :</label>
+                <input type="datetime-local" id="date_heure" name="date_heure" required>
+            </div>
+
+            <button type="submit">Réserver</button>
+        </form>
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groupes de discussion</title>
+    <style>
+        /* Section groupes de discussion */
+        .discussion-section {
+            background-color: #EBEAFF;
+            padding: 60px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Utilise toute la hauteur de la fenêtre */
+            text-align: center;
+        }
+
+        .group-box {
+            background: #ffffff;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin: 15px;
+            transition: transform 0.3s;
+        }
+
+        .group-box:hover {
+            transform: scale(1.05);
+        }
+
+        .group-box h4 {
+            font-size: 22px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .main-button {
+            background-color: #FF66A1;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .main-button:hover {
+            background-color: #FF66A1;
+        }
+
+        /* Section journal personnel */
+        .journal-section {
+            background-color: #eef2f6;
+            padding: 60px 0;
+        }
+
+        #journal-form {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #journal-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        #journal_entry {
+            width: 100%;
+            border: 2px solid #ddeeff;
+            border-radius: 10px;
+            padding: 15px;
+            font-size: 16px;
+            resize: none;
+        }
+
+        .form-options {
+            margin: 20px 0;
+        }
+
+        .form-options label {
+            margin-right: 20px;
+            font-size: 16px;
+            color: #2c3e50;
+        }
+
+        #journal-form .main-button {
+            background-color: #FF66A2;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .body {
+            background-color: #EBEAFF;
+        }
+
+        /* Centrer le texte de la section "Groupes de Discussion" */
+        .center-heading {
+            text-align: center;
+            margin: 0 auto;
+            max-width: 600px; /* Limite la largeur du bloc */
+        }
+    </style>
+</head>
+<body class="body">
+    <section id="discussion-groups" class="discussion-section">
+        <div class="container">
+            <div class="center-heading">
+                <h2 class="section-title">Groupes de Discussion</h2>
+                <p>Rejoignez des groupes bienveillants pour partager vos pensées et trouver du soutien.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="group-box">
+                        <h4>Dépression</h4>
+                        <p>Un espace pour discuter avec des personnes partageant des expériences similaires.</p>
+                        <a href="#" class="main-button">Rejoindre</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="group-box">
+                        <h4>Gestion du Stress</h4>
+                        <p>Partagez des conseils et techniques pour mieux gérer le stress au quotidien.</p>
+                        <a href="#" class="main-button">Rejoindre</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="group-box">
+                        <h4>Auto-compassion</h4>
+                        <p>Apprenez à vous traiter avec bienveillance et respect.</p>
+                        <a href="#" class="main-button">Rejoindre</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
